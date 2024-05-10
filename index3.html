@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market Research Survey</title>
+</head>
+
+<!--bài tập 7 (HTML form)-->
+<body>
+    <h1>Market Research Survey</h1>
+    <p>Please take a few moments to complete this satisfacation survey</p>
+    <hr />
+    <form>
+        <div>
+            <ul type="none" style="padding:0px">
+                <li style="padding:10px 0px">What is yout age range?<br/>
+                    <select style="width:50%">
+                        <option>18-24</option>
+                        <option>25-34</option>
+                        <option>35-50</option>
+                        <option>50+</option>
+                    </select>
+                </li>
+
+                <li style="padding:10px 0px">What is your tearly income range?<br/>
+                    <select style="width:50%">
+                        <option>$0-$25,000</option>
+                        <option>$25,001-$50,000</option>
+                        <option>$50,001-$100,000</option>
+                        <option>$100,000+</option>
+                    </select>
+                </li>
+
+                <li style="padding:10px 0px">Gender Identily
+                    <br/><input type="radio" name="gender"/> Male
+                    <br/><input type="radio" name="gender"/> Female
+                    <br/><input type="radio" name="gender"/> Nonbiraty
+                    <br/><input type="radio" name="gender"/> other
+                    <input type="text" name="gender"/>
+                </li>
+
+                <li style="padding:10px 0px">Which of the following products have your purchased in the 
+                    last 2 months. Please check all that apply.
+                    <br/><input type="checkbox" name="product"/> Product 1
+                    <br/><input type="checkbox" name="product"/> Product 2
+                    <br/><input type="checkbox" name="product"/> Product 3
+                </li>
+
+                <li style="padding:10px 0px">How often yould you use our new product?
+                    <br/><input type="radio" name="gender"/>Daily
+                    <br/><input type="radio" name="gender"/> Weakly
+                    <br/><input type="radio" name="gender"/> Monthly
+                </li>
+            </ul>
+
+            <p>What yould pay for the new product?<br/>
+                <span>$</span>
+                <input type="text" name="money"/>+ 
+                <input type="text" name="money"/>
+            </p>
+        </div>
+
+        <p>What features would you like to see in the new product<br/>
+            <textarea style="width:100%;" rows="5"></textarea>
+        </p>
+    </form>
+</body>
+</html>
