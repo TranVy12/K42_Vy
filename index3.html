@@ -5,6 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Market Research Survey</title>
+    <style>
+        tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+    </style>
 </head>
 
 <!--bài tập 7 (HTML form)-->
@@ -37,7 +42,7 @@
                     <br/><input type="radio" name="gender"/> Male
                     <br/><input type="radio" name="gender"/> Female
                     <br/><input type="radio" name="gender"/> Nonbiraty
-                    <br/><input type="radio" name="gender"/> other
+                    <br/><input type="radio" name="gender"/> Other
                     <input type="text" name="gender"/>
                 </li>
 
@@ -49,22 +54,64 @@
                 </li>
 
                 <li style="padding:10px 0px">How often yould you use our new product?
-                    <br/><input type="radio" name="gender"/>Daily
-                    <br/><input type="radio" name="gender"/> Weakly
-                    <br/><input type="radio" name="gender"/> Monthly
+                    <br/><input type="radio" name="often"/>Daily
+                    <br/><input type="radio" name="often"/> Weakly
+                    <br/><input type="radio" name="often"/> Monthly
                 </li>
             </ul>
 
             <p>What yould pay for the new product?<br/>
                 <span>$</span>
-                <input type="text" name="money"/>+ 
-                <input type="text" name="money"/>
+                <input type="text" name="money" placeholder="Dollars"/>+ 
+                <input type="text" name="money" placeholder="cents"/>
             </p>
         </div>
 
         <p>What features would you like to see in the new product<br/>
             <textarea style="width:100%;" rows="5"></textarea>
         </p>
+
+        <div>
+            <p>Please rate your level of agreement with the following statements</p>
+            <table border="1">
+                <tr>
+                    <td></td>
+                    <td>Strongly Disagree</td>
+                    <td>Disagree</td>
+                    <td>Agree</td>
+                    <td>Strongly Agree</td>
+                </tr>
+                <tr>
+                    <td>Our products are priced fairly</td>
+                    <td colspan="4" style="text-align: center;">
+                        <input type="radio" name="option"/> 1
+                        <input type="radio" name="option"/> 2
+                        <input type="radio" name="option"/> 3
+                        <input type="radio" name="option"/> 4
+                    </td>
+                </tr>
+                <tr>
+                    <td>Our prosucts are high quality</td>
+                    <td colspan="4" style="text-align: center;">
+                        <input type="radio" name="option"/> 1
+                        <input type="radio" name="option"/> 2
+                        <input type="radio" name="option"/> 3
+                        <input type="radio" name="option"/> 4
+                    </td>
+                </tr>
+                <tr>
+                    <td>You would recommend our product to a friend or coworker</td>
+                    <td colspan="4" style="text-align: center;">
+                        <input type="radio" name="option"/> 1
+                        <input type="radio" name="option"/> 2
+                        <input type="radio" name="option"/> 3
+                        <input type="radio" name="option"/> 4
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br/>
+        <input type="Submit" name="submit"/>
     </form>
 </body>
 </html>
