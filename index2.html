@@ -5,15 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SimpleForm.html</title>
+    <link href="demo.css" rel="stylesheet" />
 </head>
 
 <!--Thực tập 6+8 (HTML form)-->
+
 <body style="background-color: lightblue;">
+    <!--Chưa sử dụng css-->
     <div style="background-color: white;padding:5px;">
         <form>
             <h1 style="text-align: center;background-color: red;">SỞ THÍCH CỦA BẠN</h1>
 
-            <p style="text-align:left">Họ và tên:
+            <p>Họ và tên:
                 <input type="text" name="yourname" />
             </p>
 
@@ -59,8 +62,6 @@
                 <input type="radio" name="sex" /> Nữ
             </p>
 
-            <p>Ngày sinh: <input type="date" name="birthday" /></p>
-
             <p>Địa chỉ
                 <textarea name="address" rows="4"></textarea>
             </p>
@@ -89,15 +90,15 @@
     <div style="background-color: lightpink;">
         <form>
             <p>Họ và tên:
-                <br/><input type="text" name="yourname" />
+                <br /><input type="text" name="yourname" />
             </p>
 
             <p>Email:
-                <br/><input type="email" name="email" />
+                <br /><input type="email" name="email" />
             </p>
 
             <p>Số điện thoại:
-                <br/><input type="text" name="phone" />
+                <br /><input type="text" name="phone" />
             </p>
 
             <p>Giới tính:
@@ -109,6 +110,100 @@
                 <input type="submit" name="Submit form" value="Submit" />
             </p>
         </form>
+    </div>
+
+    <!--Có sử dụng css-->
+    <div class="form1">
+        <form>
+            <h1 style="text-align: center; background-color: red;">SỞ THÍCH CỦA BẠN</h1>
+
+            <div class="content">
+                <div class="infor">
+                    <p>Họ và tên: </p>
+                    <p>Email: </p>
+                    <p>Sở thích: </p>
+                </div>
+
+                <div class="input">
+                    <p><input type="text" name="yourname" /><br /></p>
+                    <p><input type="email" name="email"><br /></p>
+                    <p>
+                        <input type="checkbox" name="hobby" style="color:orange" />
+                        <span style="color:orange">Thể thao</span>
+                        <input type="checkbox" name="hobby" style="color:orange" />
+                        <span style="color:orange">Âm nhạc</span>
+                        <input type="checkbox" name="hobby" style="color:orange" />
+                        <span style="color:orange">Đọc sách</span>
+                        <input type="checkbox" name="hobby" style="color:orange" />
+                        <span style="color:orange">lướt web</span>
+                        <input type="checkbox" name="hobby" style="color:orange" />
+                        <span style="color:orange">Chơi game</span>
+                        <input type="checkbox" name="hobby" style="color:orange" />
+                        <span style="color:orange">Diện ảnh</span>
+                        <input type="checkbox" name="hobby" style="color:orange" />
+                        <span style="color:orange">Du lich</span>
+                    </p>
+
+                </div>
+            </div>
+
+            <p>
+                <input type="submit" name="Submit form" value="Submit" />
+                <input type="reset" name="reset" value="reset" />
+            </p>
+        </form>
+    </div>
+
+    <div class="form2">
+        <form>
+            <h1 style="background-color: aquamarine; color:blue;">ĐĂNG KÝ HỌC VIÊN</h1>
+
+            <div class="content2">
+                <div class="infor2">
+                    <p>Họ và tên: </p>
+                    <p>Ngày sinh: </p>
+                    <p>Giới tính: </p>
+                </div>
+
+                <div class="input2">
+                    <p><input type="text" name="yourname" /></p>
+                    <p><input type="date" name="birthday" /></p>
+                    <p>
+                        <input type="radio" name="sex" /> Nam
+                        <input type="radio" name="sex" /> Nữ
+                    </p>
+                </div>
+            </div>
+
+            <div class="content2">
+                <p>Địa chỉ: </p>
+                <p><textarea name="address" rows="4"></textarea></p>
+            </div>
+
+            <div class="content2">
+                <div class="infor2">
+                    <p>Lớp </p>
+                    <p>Email: </p>
+                    <p>Số điện thoại: </p>
+                </div>
+
+                <div>
+                    <p>
+                        <select name="class">
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                            <option>D</option>
+                            <option>E</option>
+                        </select>
+                    </p>
+                    <p><input type="email" name="email" /></p>
+                    <p><input type="number" name="phone" /></p>
+                </div>
+
+            </div>
+    </div>
+    </form>
     </div>
 </body>
 
