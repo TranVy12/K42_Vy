@@ -1,0 +1,34 @@
+.form1 {
+    background-color: white;
+    padding: 5px;
+}
+
+.content{
+    display:flex;
+    
+}
+
+.infor{
+    text-align: right;
+}
+
+.input{ 
+    width:50%;
+    flex-wrap:nowrap;
+}
+
+.form2{
+    background-color: yellow;
+    padding:5px;
+}
+
+.content2{
+    display:flex;
+}
+
+.infor2{
+}
+
+.input2{
+    width:50%;
+}
