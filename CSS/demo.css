@@ -1,0 +1,164 @@
+/*LAYOUT*/
+.layout {
+    background-color: lightpink;
+}
+
+/*CSS HEADER*/
+header {
+    display:flex;
+}
+
+div.logo {
+    border: 1px solid blue;
+    width: 20%;
+}
+
+img {
+    width: 100%;
+}
+
+h1.banner {
+    border: 1px solid blue;
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding:20px;
+    text-align: center;
+}
+
+/*CSS NAV*/
+section.nav {
+    display:flex;
+    border: 1px solid blue;
+    margin:0;
+    padding:0;
+}
+
+section.nav > ul > li {
+    list-style-type: none;
+    
+}
+
+section.nav > ul > li > a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+ul.left{
+    display:flex;
+    text-align: center;
+    padding: 0;
+}
+
+ul.left > li {
+    border-right: 1px solid blue;
+    
+}
+
+ul.right {
+    margin-left: auto;
+}
+
+ul.left > li:last-child {
+    border-right:none;
+}
+
+/*CSS PHOTOS*/
+section.photos {
+    
+    width: 70%;
+    margin: 0 auto;
+}
+
+div.photo {
+    display: flex;
+}
+
+div.photo > div {
+    border: 1px solid blue;
+    width: 100%;
+    padding:15px;
+    text-align: center;
+}
+
+/*CSS NEWS*/
+div.news {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+}
+
+div.new {
+    border: 1px solid blue;
+    padding: 10%;
+    margin:1%;
+}
+
+/*CSS FOOTER*/
+footer {
+    display:flex;
+    border: 1px solid blue;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-left:auto;
+    
+}
+
+footer > ul > li > a {
+    padding: 0 15px;
+    display:block;
+}
+
+/*CSS INFORMATION*/
+section.information > div {
+    border: 1px solid blue;
+}
+
+div.infor-left {
+    float:left;
+    width: 13%;
+    margin-right: auto;
+}
+
+div.infor-left > div {
+    border: 1px solid blue;
+}
+
+div.infor-left > div > ul {
+    border: 1px solid blue;
+    padding:0;
+    margin:0;
+    height: 150px;
+}
+
+div.infor-left > div > ul > li {
+    list-style-type: none;
+    padding:5px;
+}
+
+div.infor-left > div > p {
+    border: 1px solid blue;
+    height: 100px;
+}
+
+div.infor-right {
+    float: right;
+    width: 13%;
+    margin-left: auto;
+}
+
+div.infor-right > div {
+    border: 1px solid blue;
+    height: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+/*HTML*/
+.html {
+    background-color: bisque;
+}
