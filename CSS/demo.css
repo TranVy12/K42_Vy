@@ -162,3 +162,8 @@ div.infor-right > div {
 .html {
     background-color: bisque;
 }
+
+input {
+    margin: 10px 15px;
+    padding:10px;
+}

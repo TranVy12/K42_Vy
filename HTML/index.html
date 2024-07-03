@@ -6,11 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SimpleForm.html</title>
     <link href="../CSS/demo.css" rel="stylesheet" />
+    <script src="../JS/demo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+
+        });
+    </script>
 </head>
 
 <!--Bài thực hành HTML-->
 
 <body>
+    <div class="demojs">
+        <div>
+            <input type="button" value="Click me" onclick="showMess1()">
+            <div id="messDiv"></div>
+            <input type="button" value="Click me" onclick="showMess2()">
+            <input type="button" value="Click me" onclick="showMess3()">
+            <input type="button" value="Click me" onclick="showMess4()">
+        </div>
+    
+        <div>
+            
+        </div>
+    </div>
+
     <section class="layout">
         <header>
             <div class="logo">
@@ -96,7 +118,7 @@
         </a>
     </div>
 
-    <section>
+    <section class="list">
         <div style="background-color: blanchedalmond;">
             <ul>
                 <li>Việt Nam
@@ -129,7 +151,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="form">
         <div
             style="background-color: #bcd6ef; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
             <form method="get" action="SimpleForm.html">
