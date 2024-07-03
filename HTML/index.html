@@ -10,7 +10,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
     </script>
     <script>
-        $(document).ready(function() {
+        function showMess1() {
+            alert('Xin chào!')
+        }
+
+        function showMess2() {
+            document.getElementById('messDiv').innerHTML = "Xin chào!"
+        }
+
+        function showMess3() {
+            document.write('Xin chào!')
+        }
+
+        function showMess4() {
+            console.log('Xin chào!')
+        }
+        
+        $(document).ready(function () {
 
         });
     </script>
@@ -20,17 +36,13 @@
 
 <body>
     <div class="demojs">
-        <div>
-            <input type="button" value="Click me" onclick="showMess1()">
-            <div id="messDiv"></div>
-            <input type="button" value="Click me" onclick="showMess2()">
-            <input type="button" value="Click me" onclick="showMess3()">
-            <input type="button" value="Click me" onclick="showMess4()">
-        </div>
-    
-        <div>
-            
-        </div>
+        <input type="button" value="Click me 1" onclick="showMess1()">
+        <input type="button" value="Click me 3" onclick="showMess3()">
+        <input type="button" value="Click me 4" onclick="showMess4()">
+        <div id="messDiv"></div>
+        <input type="button" value="Click me 2" onclick="showMess2()">
+        <input type="button" value="Click me 5" onclick="showMess5()">
+        <input type="button" value="Click me 6" onclick="alert('Xin chào!')">
     </div>
 
     <section class="layout">
